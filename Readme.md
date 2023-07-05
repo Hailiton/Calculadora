@@ -1,2 +1,3 @@
 # Calculadora em Grupo 
-Yasmin
+Yasmin 
+Ana Julia 
