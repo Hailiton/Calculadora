@@ -34,21 +34,23 @@
             label1 = new Label();
             label2 = new Label();
             Resultado = new Label();
-            label3 = new Label();
+            simbolo = new Label();
             SuspendLayout();
             // 
             // somar
             // 
+            somar.BackColor = Color.FromArgb(192, 255, 255);
             somar.Location = new Point(1143, 203);
             somar.Name = "somar";
             somar.Size = new Size(112, 34);
             somar.TabIndex = 0;
             somar.Text = "somar";
-            somar.UseVisualStyleBackColor = true;
+            somar.UseVisualStyleBackColor = false;
             somar.Click += button1_Click;
             // 
             // segundoNumero
             // 
+            segundoNumero.BackColor = Color.FromArgb(255, 192, 192);
             segundoNumero.Location = new Point(1124, 141);
             segundoNumero.Name = "segundoNumero";
             segundoNumero.Size = new Size(150, 31);
@@ -56,6 +58,7 @@
             // 
             // primeiroNumero
             // 
+            primeiroNumero.BackColor = Color.FromArgb(255, 192, 192);
             primeiroNumero.Location = new Point(1124, 80);
             primeiroNumero.Name = "primeiroNumero";
             primeiroNumero.Size = new Size(150, 31);
@@ -88,21 +91,23 @@
             Resultado.TabIndex = 5;
             Resultado.Text = "0";
             // 
-            // label3
+            // simbolo
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(1187, 114);
-            label3.Name = "label3";
-            label3.Size = new Size(24, 25);
-            label3.TabIndex = 6;
-            label3.Text = "+";
+            simbolo.AutoSize = true;
+            simbolo.BackColor = Color.FromArgb(255, 192, 255);
+            simbolo.Location = new Point(1187, 114);
+            simbolo.Name = "simbolo";
+            simbolo.Size = new Size(24, 25);
+            simbolo.TabIndex = 6;
+            simbolo.Text = "+";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(255, 192, 255);
             ClientSize = new Size(1472, 738);
-            Controls.Add(label3);
+            Controls.Add(simbolo);
             Controls.Add(Resultado);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -124,6 +129,6 @@
         private Label label1;
         private Label label2;
         private Label Resultado;
-        private Label label3;
+        private Label simbolo;
     }
 }
